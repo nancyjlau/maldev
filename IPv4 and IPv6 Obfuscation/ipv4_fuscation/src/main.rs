@@ -10,7 +10,6 @@ fn generate_ipv4_output(shellcode: &[u8]) -> Result<(), &'static str> {
 
     print!("let ipv4_array = [");
 
-    // Counter for the number of 4-byte sets processed
     let mut counter = 0;
 
     // Iterating over the shellcode 4 bytes at a time
